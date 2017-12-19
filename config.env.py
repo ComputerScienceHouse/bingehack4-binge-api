@@ -3,7 +3,7 @@ import os
 # Flask config
 DEBUG=False
 IP=os.environ.get('BINGEBOARD_IP', '0.0.0.0')
-PORT=os.environ.get('BINGEBOARD_PORT', '8080')
+PORT=int(os.environ.get('BINGEBOARD_PORT', '8080'))
 SERVER_NAME = os.environ.get('BINGEBOARD_SERVER_NAME', 'binge.csh.rit.edu')
 SECRET_KEY = os.environ.get('BINGEBOARD_SECRET_KEY', '')
 
